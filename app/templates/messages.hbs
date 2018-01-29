@@ -1,0 +1,22 @@
+<h1>Welcome to Anita's Ember.js Project</h1>
+{{outlet}} {{#each messages as |message|}}
+
+<div class="ui feed">
+  <div class="event">
+    <div class="label">
+      <img src="{{message.pic}}" style="border-radius: 50%;">
+</div>
+<div class="content">
+  <div class="summary">
+    {{message.message}}
+    <br> {{message.useragent}}
+    <div class="date">
+      {{message.date}}
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<br> {{/each}}
+
+<p>{{message}}</p>
